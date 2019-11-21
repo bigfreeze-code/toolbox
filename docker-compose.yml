@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  toolbox:
+    container_name: toolbox
+    build:
+      context: ./container
+    user: user
+    network_mode: host
+    volumes:
+      - $HOME/.ssh/id_rsa_bf:/home/user/.ssh/id_rsa_bf:ro

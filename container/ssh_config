@@ -1,0 +1,4 @@
+Host github.com
+    User                    git
+    ProxyCommand            nc -x localhost:9150 %h %p
+    IdentityFile            ~/.ssh/id_rsa_bf/id_rsa
