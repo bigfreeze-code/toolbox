@@ -9,3 +9,5 @@ services:
     network_mode: host
     volumes:
       - $HOME/.ssh/id_rsa_bf:/home/user/.ssh/id_rsa_bf:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /Work/local/bigfreeze:/Work/local/bigfreeze
